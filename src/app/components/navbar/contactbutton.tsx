@@ -6,7 +6,7 @@ export default function NavBarContactButton() {
         <motion.a 
                     transition={{ type: 'spring' }} 
                     whileHover={{ scale: 1.1, transitionEnd: { scale: 1.0 } }} 
-                    className='font-martian font-semibold text-sm text-white px-6 py-3 border border-white rounded-full sm:inline hidden' 
+                    className='font-martian font-semibold text-sm text-white px-6 py-3 border border-white rounded-full lg:inline hidden' 
                     target="_blank" 
                     href='https://t.me/Gurwi30'>
                     get in touch
