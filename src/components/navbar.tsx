@@ -13,8 +13,8 @@ const NavBar = () => {
                 <div className="h-4 w-px bg-white/20"></div>
 
                 <ul className="flex items-center font-medium space-x-2 sm:space-x-4 md:space-x-6">
-                    <li><a href="#works" className="hover:text-blue-400 transition-colors">Work</a></li>
                     <li><a href="#about" className="hover:text-blue-400 transition-colors">About</a></li>
+                    <li><a href="#works" className="hover:text-blue-400 transition-colors">Work</a></li>
                     <li><a href="https://github.com/Gurwi30" target="_blank" className="hover:text-blue-400 transition-colors">GitHub</a></li>
                 </ul>
 

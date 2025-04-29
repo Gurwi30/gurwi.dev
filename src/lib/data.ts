@@ -72,3 +72,8 @@ export const technologies = [
         img_path: "/logos/spigotmc.svg"
     }
 ]
+
+export const experiences = [
+    { company: "AtlantisRP", role: "Mod Developer", startDate: "Aug 2023", endDate: "Present" },
+    { company: "WarAccademy", role: "Mod Developer", startDate: "May 2023", endDate: "Jun 2023" }
+];
