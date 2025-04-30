@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Red_Hat_Text } from "next/font/google";
+import { gabarito, homemadeApple, poiretOne } from "@/utils/fonts";
 import { ReactLenis } from "@/utils/lenis";
 import "./globals.css";
 
@@ -10,7 +11,13 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
 	variable: "--font-geist-mono",
-	subsets: ["latin"],
+	subsets: ["latin"]
+});
+
+const redHat = Red_Hat_Text({
+	subsets: ['latin'],
+	variable: '--font-red-hat',
+	display: "swap"
 });
 
 export const metadata: Metadata = {
@@ -22,7 +29,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
 	return (
 		<html lang="en">
-			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+			<body className={`${geistSans.variable} ${geistMono.variable} ${redHat.variable} ${homemadeApple.variable} ${gabarito.variable} ${poiretOne.variable} antialiased`}>
 				<ReactLenis root>
 					{children}
 				</ReactLenis>
