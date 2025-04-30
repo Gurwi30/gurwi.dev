@@ -4,11 +4,11 @@ This directory contains the source code for my personal portfolio website. The p
 
 ## 🛠️ Technologies Used
 
-- **Framework:** [e.g., React.js, Next.js, Vue.js]
-- **Styling:** [e.g., Tailwind CSS, SCSS, Styled Components]
-- **Type Checking:** [e.g., TypeScript]
-- **Animations:** [e.g., Framer Motion, GSAP]
-- **Deployment:** [e.g., Vercel, Netlify]
+- **Framework:** Next.js
+- **Styling:** Tailwind CSS
+- **Type Checking:** TypeScript]
+- **Animations:** Framer Motion
+- **Deployment:** Netlify
 
 ## 🚀 Getting Started
 
