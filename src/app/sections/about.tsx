@@ -10,7 +10,7 @@ export default function AboutSection() {
                 </h1>
 
                 <h2 className="text-sm min-[430px]:text-base max-w-lg md:max-w-3xl text-dark-200/70 text-stone-200/70">
-                    Some text about my knowlage about the current Technologies i use
+                    A brief overview of the technologies I currently work with and their significance in my projects.
                 </h2>
             </div>
 

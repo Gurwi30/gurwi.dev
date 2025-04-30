@@ -1,9 +1,8 @@
-'use client'
-import { useState } from 'react';
 
 interface FilterButtonProps {
     name: string,
-    selected?: boolean
+    selected?: boolean,
+    onClick?: Function
 }
 
 const Selector = ({ children }: { children?: React.ReactNode }) => {
@@ -20,12 +19,13 @@ const Selector = ({ children }: { children?: React.ReactNode }) => {
 };
 
 
-const FilterButton = ({ name, selected: initialSelected }: FilterButtonProps) => {
-    const [selected, setSelected] = useState(initialSelected || false);
+const FilterButton = ({ name, selected, onClick }: FilterButtonProps) => {
 
     return (
         <button 
-            onClick={() => setSelected(true)}
+            onClick={() => {
+                if (onClick) onClick();
+            }}
             className={`w-[95%] md:flex-1 px-4 md:px-6 py-2 text-sm font-medium rounded md:rounded-full transition-all duration-300 cursor-pointer whitespace-nowrap
             ${selected
                 ? "bg-white/10 text-white shadow-[inset_0px_1px_0px_0px_rgba(255,255,255,0.1)]"

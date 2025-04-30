@@ -1,4 +1,4 @@
-import { PiGithubLogoBold, PiTelegramLogoBold } from "react-icons/pi";
+import { PiDiscordLogoBold, PiGithubLogoBold, PiTelegramLogoBold } from "react-icons/pi";
 
 const Footer = () => {
     return (
@@ -11,8 +11,9 @@ const Footer = () => {
                     </span>
 
                     <div className="flex flex-row items-center gap-4 text-white/60">
-                        <a className="hover:text-blue-400 transition-colors" href="/"><PiTelegramLogoBold /></a>
-                        <a className="hover:text-blue-400 transition-colors" href="/"><PiGithubLogoBold /></a>
+                        <a className="hover:text-blue-400 transition-colors" href="https://t.me/Gurwi30" target="_blank"><PiTelegramLogoBold /></a>
+                        <a className="hover:text-blue-400 transition-colors" href="https://github.com/Gurwi30/gurwi.dev" target="_blank"><PiGithubLogoBold /></a>
+                        <a className="hover:text-blue-400 transition-colors" href="/" target="_blank"><PiDiscordLogoBold /></a>
                     </div>
                 
                 </div>

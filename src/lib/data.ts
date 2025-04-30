@@ -77,3 +77,8 @@ export const experiences = [
     { company: "AtlantisRP", role: "Mod Developer", startDate: "Aug 2023", endDate: "Present" },
     { company: "WarAccademy", role: "Mod Developer", startDate: "May 2023", endDate: "Jun 2023" }
 ];
+
+export const projects = [
+    { name: "InventoryTracker", category: "mod", featured: false, image: "/showcases/inventorytracker.png", href: "https://modrinth.com/plugin/inventorytracker", tags: [ "SpigotMC", "MySql" ] },
+    { name: "LumiBot.dev", category: "web", featured: true, image: "/showcases/lumibot.png", href: "https://lumibot.dev", tags: [ "NextJS", "Framer Motion", "SpringBoot", "PostgreSQL", "Redis", "JDA" ] }
+]
