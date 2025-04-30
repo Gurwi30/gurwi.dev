@@ -6,7 +6,7 @@ This directory contains the source code for my personal portfolio website. The p
 
 - **Framework:** Next.js
 - **Styling:** Tailwind CSS
-- **Type Checking:** TypeScript]
+- **Type Checking:** TypeScript
 - **Animations:** Framer Motion
 - **Deployment:** Netlify
 
