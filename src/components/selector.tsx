@@ -2,7 +2,7 @@
 interface FilterButtonProps {
     name: string,
     selected?: boolean,
-    onClick?: Function
+    onClick?: () => void
 }
 
 const Selector = ({ children }: { children?: React.ReactNode }) => {

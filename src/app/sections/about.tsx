@@ -27,7 +27,7 @@ export default function AboutSection() {
                     </h1>
 
                     <h2 className="text-sm min-[430px]:text-base max-w-lg md:max-w-3xl text-dark-200/70 text-stone-200/70">
-                        Some of the places I've contributed to, including the roles I held and the time periods.
+                        Some of the places I&apos;ve contributed to, including the roles I held and the time periods.
                     </h2>
                 </div>
 
