@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
 	title: "Gurwi Portfolio",
 	description: "@Gurwi30 Portfolio",
-	icons: "/icon.png"
+	icons: "/favicon.ico"
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

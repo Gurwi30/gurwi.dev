@@ -15,7 +15,7 @@ export default function HomeSection() {
                             key={index}
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            transition={{ delay: index * 0.07 }}
+                            transition={{ delay: index * 0.04 }}
                         >
                             {char}
                         </motion.span>
@@ -56,7 +56,7 @@ const CoolTextComponent = ({ text }: { text: string }) => {
                     key={index}
                     initial={{ color: "#ffffff" }}
                     animate={{ color: "#3b82f6" }}
-                    transition={{ delay: 1 + index * 0.03 }}
+                    transition={{ delay: 0.8 + index * 0.02 }}
                     className="font-bold"
                 >
                     {char}
