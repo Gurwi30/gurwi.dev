@@ -25,11 +25,9 @@ npm run dev
 ## 📄 About
 This portfolio is a personal project intended to:
 
-Demonstrate my design and development skills
-
-Share my latest projects and work experience
-
-Provide a way for potential clients or employers to contact me
+- Demonstrate my design and development skills
+- Share my latest projects and work experience
+- Provide a way for potential clients or employers to contact me
 
 ## 📬 Contact
 Feel free to reach out to me via LinkedIn, email, or through the contact form on the site.
