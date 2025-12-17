@@ -79,6 +79,6 @@ export const experiences = [
 ];
 
 export const projects = [
-    { name: "InventoryTracker", category: "mod", featured: false, image: "/showcases/inventorytracker.png", href: "https://modrinth.com/plugin/inventorytracker", tags: [ "SpigotMC", "MySql" ] },
-    { name: "LumiBot.dev", category: "web", featured: true, image: "/showcases/lumibot.png", href: "https://lumibot.dev", tags: [ "NextJS", "Framer Motion", "SpringBoot", "PostgreSQL", "Redis", "JDA" ] }
+    { title: "InventoryTracker", description: "A simple inventory saver.", category: "mod", featured: false, image: "/showcases/inventorytracker.png", link: "https://modrinth.com/plugin/inventorytracker", tags: [ "SpigotMC", "MySql" ] },
+    { title: "LumiBot.dev", description: "A powerful Discord bot dashboard and management system.", category: "web", featured: true, image: "/showcases/lumibot.png", link: "https://lumibot.dev", tags: [ "NextJS", "Framer Motion", "SpringBoot", "PostgreSQL", "Redis", "JDA" ] }
 ]
