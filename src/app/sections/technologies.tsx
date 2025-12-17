@@ -45,7 +45,7 @@ export default function TechnologiesSection() {
                                     width={48}
                                     height={48}
                                     decoding="async"
-                                    className="w-6 h-6 object-contain"
+                                    className={`w-6 h-6 object-contain light ${tech.invertable ? "invert dark:invert-0" : ""}`}
                                     style={{ color: "transparent" }}
                                 />
                             </div>

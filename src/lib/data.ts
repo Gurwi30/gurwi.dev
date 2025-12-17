@@ -1,5 +1,30 @@
+export type Technology = {
+  name: string
+  description: string
+  img_path: string,
+  invertable?: boolean
+}
 
-export const technologies = [
+export type Experience = {
+    company: string,
+    role: string,
+    startDate: string,
+    endDate: string
+}
+
+type Category = "web" | "mod" | "other";
+
+export type Project = {
+    title: string,
+    description: string,
+    category: Category,
+    featured: boolean,
+    image: string,
+    link: string,
+    tags: string[]
+}
+
+export const technologies: Technology[] = [
     {
         name: "Java",
         description: "Coding Language",
@@ -39,7 +64,8 @@ export const technologies = [
     {
         name: "NextJS",
         description: "React Framework",
-        img_path: "/logos/nextjs.svg"
+        img_path: "/logos/nextjs.svg",
+        invertable: true
     },
 
     {
@@ -69,16 +95,17 @@ export const technologies = [
     {
         name: "SpigotAPI",
         description: "Minecraft Server Software",
-        img_path: "/logos/spigotmc.svg"
+        img_path: "/logos/spigotmc.svg",
+        invertable: true
     }
 ]
 
-export const experiences = [
+export const experiences: Experience[] = [
     { company: "AtlantisRP", role: "Mod Developer", startDate: "Aug 2023", endDate: "July 2025" },
     { company: "WarAccademy", role: "Mod Developer", startDate: "May 2023", endDate: "Jun 2023" }
 ];
 
-export const projects = [
+export const projects: Project[] = [
     { title: "InventoryTracker", description: "A simple inventory saver.", category: "mod", featured: false, image: "/showcases/inventorytracker.png", link: "https://modrinth.com/plugin/inventorytracker", tags: [ "SpigotMC", "MySql" ] },
-    { title: "LumiBot.dev", description: "A powerful Discord bot dashboard and management system.", category: "web", featured: true, image: "/showcases/lumibot.png", link: "https://lumibot.dev", tags: [ "NextJS", "Framer Motion", "SpringBoot", "PostgreSQL", "Redis", "JDA" ] }
+    //{ title: "LumiBot.dev", description: "A powerful Discord bot dashboard and management system.", category: "web", featured: true, image: "/showcases/lumibot.png", link: "https://lumibot.dev", tags: [ "NextJS", "Framer Motion", "SpringBoot", "PostgreSQL", "Redis", "JDA" ] }
 ]

@@ -50,7 +50,7 @@ export const metadata: Metadata = {
         url: "https://gurwi.me",
         images: [
             {
-                url: "/og.png",
+                url: "https://gurwi.me/og.png",
                 width: 1200,
                 height: 630
             },
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Gurwi – Full Stack Developer & Modder",
         description: "Check out my projects, web apps, and custom Minecraft mods.",
-        images: ["/og.png"]
+        images: ["https://gurwi.me/og.png"]
     }
 };
 
