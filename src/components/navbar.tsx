@@ -4,7 +4,7 @@ import { ThemeToggle } from "./ui/theme-toggle";
 import { useScroll } from "@/hook/useScroll";
 
 const NavBar = () => {
-    const { to } = useScroll();
+    const { to, top } = useScroll();
     
     return (
         <div>
@@ -14,7 +14,8 @@ const NavBar = () => {
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6 }}
-                        className="text-xl font-bold font-serif tracking-tight"
+                        className="text-xl font-bold font-serif tracking-tight cursor-pointer"
+                        onClick={() => top()}
                     >
                         Gurwi
                     </motion.div>
