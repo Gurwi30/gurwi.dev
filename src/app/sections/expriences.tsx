@@ -2,9 +2,9 @@ import { fadeInUp, staggerContainer } from "@/lib/animation";
 import { experiences } from "@/lib/data";
 import { motion } from "@/utils/motion";
 
-export default function ExperiencesSection() {
+export default function WorkSection() {
     return (
-        <section id="experiences" className="py-20">
+        <section id="work" className="py-20">
             <motion.div
                 initial="hidden"
                 whileInView="visible"

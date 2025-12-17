@@ -1,8 +1,12 @@
+"use client"
 import { Button } from "@/components/ui/button";
+import { useScroll } from "@/hook/useScroll";
 import { fadeInUp, staggerContainer } from "@/lib/animation";
 import { motion } from "@/utils/motion";
 
 export default function HomeSection() {
+    const { to } = useScroll();
+    
     return (
         <section
             id="home"
@@ -43,14 +47,16 @@ export default function HomeSection() {
                 <motion.div variants={fadeInUp} className="flex gap-4">
                     <Button
                         size="lg"
-                        className="rounded-full px-8 text-base h-12 transition-transform hover:scale-105"
+                        className="rounded-full cursor-pointer px-8 text-base h-12 transition-transform hover:scale-105"
+                        onClick={() => to("projects")}
                     >
                         View Projects
                     </Button>
                     <Button
                         size="lg"
                         variant="outline"
-                        className="rounded-full px-8 text-base h-12 transition-transform hover:scale-105"
+                        className="rounded-full cursor-pointer px-8 text-base h-12 transition-transform hover:scale-105"
+                        onClick={() => to("contact")}
                     >
                         Contact Me
                     </Button>

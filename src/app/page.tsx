@@ -2,7 +2,7 @@ import NavBar from "@/components/navbar";
 import HomeSection from "./sections/home";
 import TechnologiesSection from "./sections/technologies";
 import Footer from "@/components/footer";
-import ExperiencesSection from "./sections/expriences";
+import WorkSection from "./sections/expriences";
 import ProjectsSection from "./sections/projects";
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
                 <main className="container mx-auto px-6 pt-32 pb-20">
                     <HomeSection />
                     <TechnologiesSection />
-                    <ExperiencesSection />
+                    <WorkSection />
                     <ProjectsSection />
                     
                     <Footer />

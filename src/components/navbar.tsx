@@ -1,7 +1,11 @@
+"use client"
 import { motion } from "@/utils/motion";
 import { ThemeToggle } from "./ui/theme-toggle";
+import { useScroll } from "@/hook/useScroll";
 
 const NavBar = () => {
+    const { to } = useScroll();
+    
     return (
         <div>
             <nav className="fixed top-0 w-full z-50 backdrop-blur-md border-b border-border/40 bg-background/80 supports-[backdrop-filter]:bg-background/60">
@@ -24,6 +28,7 @@ const NavBar = () => {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.1 * index }}
                                 className="text-sm font-medium hover:text-primary transition-colors"
+                                onClick={() => to(item.toLowerCase())}
                             >
                                 {item}
                             </motion.a>

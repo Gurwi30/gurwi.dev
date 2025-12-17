@@ -6,7 +6,7 @@ import { PiTelegramLogoBold } from "react-icons/pi";
 
 const Footer = () => {
     return (
-        <footer id="footer" className="py-20 border-t border-border/40 mt-20">
+        <footer className="py-20 border-t border-border/40 mt-20">
             <motion.div
                 initial="hidden"
                 whileInView="visible"
@@ -23,7 +23,7 @@ const Footer = () => {
                         to new opportunities. If you have a project in mind,
                         feel free to reach out.
                     </p>
-                    <div className="flex gap-6">
+                    <div id="contact" className="flex gap-6">
                         {[
                             { Icon: LuGithub, href: "https://github.com/Gurwi30" },
                             { Icon: LuLinkedin, href: "https://www.linkedin.com/in/gurwi/" },
