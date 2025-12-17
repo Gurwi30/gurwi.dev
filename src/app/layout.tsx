@@ -17,7 +17,6 @@ const inter = Inter({
     style: ["normal", "italic"],
 });
 
-// Playfair Display
 const playfair = Playfair_Display({
     subsets: ["latin"],
     variable: "--font-playfair",
@@ -26,26 +25,45 @@ const playfair = Playfair_Display({
     style: ["normal", "italic"],
 });
 
-// Homemade Apple
 const homemadeApple = Homemade_Apple({
     subsets: ["latin"],
     variable: "--font-homemade-apple",
     display: "swap",
-    weight: ["400"]
+    weight: ["400"],
 });
 
-// Great Vibes
 const greatVibes = Great_Vibes({
     subsets: ["latin"],
     variable: "--font-great-vibes",
     display: "swap",
-    weight: ["400"]
+    weight: ["400"],
 });
 
 export const metadata: Metadata = {
-    title: "Gurwi Portfolio",
-    description: "@Gurwi30 Portfolio",
+    title: "Gurwi – Full Stack Developer & Modder",
+    description: "I’m a full stack developer from Italy building accessible, pixel-perfect websites and custom game mods.",
     icons: "/favicon.ico",
+    openGraph: {
+        title: "Gurwi Portfolio – Projects & Creations",
+        description:
+            "Explore my latest projects, web applications, and custom Minecraft mods.",
+        url: "https://gurwi.me",
+        images: [
+            {
+                url: "/og.png",
+                width: 1200,
+                height: 630
+            },
+        ],
+        siteName: "Gurwi Portfolio",
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Gurwi – Full Stack Developer & Modder",
+        description: "Check out my projects, web apps, and custom Minecraft mods.",
+        images: ["/og.png"]
+    }
 };
 
 export default function RootLayout({
