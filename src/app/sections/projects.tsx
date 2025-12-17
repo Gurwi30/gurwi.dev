@@ -11,9 +11,9 @@ import { projects } from "@/lib/data";
 import { motion } from "@/utils/motion";
 import { ExternalLink } from "lucide-react";
 
-export default function WorksSection() {
+export default function ProjectsSection() {
     return (
-        <section id="works" className="py-20">
+        <section id="projects" className="py-20">
             <motion.div
                 initial="hidden"
                 whileInView="visible"

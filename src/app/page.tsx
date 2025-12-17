@@ -3,7 +3,7 @@ import HomeSection from "./sections/home";
 import TechnologiesSection from "./sections/technologies";
 import Footer from "@/components/footer";
 import ExperiencesSection from "./sections/expriences";
-import WorksSection from "./sections/works";
+import ProjectsSection from "./sections/projects";
 
 export default function Home() {
     return (
@@ -15,7 +15,7 @@ export default function Home() {
                     <HomeSection />
                     <TechnologiesSection />
                     <ExperiencesSection />
-                    <WorksSection />
+                    <ProjectsSection />
                     
                     <Footer />
                 </main>
