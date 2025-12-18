@@ -1,25 +1,25 @@
 import NavBar from "@/components/navbar";
 import HomeSection from "./sections/home";
-import WorksSection from "./sections/works";
-import AboutSection from "./sections/about";
+import TechnologiesSection from "./sections/technologies";
 import Footer from "@/components/footer";
+import WorkSection from "./sections/expriences";
+import ProjectsSection from "./sections/projects";
 
 export default function Home() {
     return (
-        <div className="relative px-5 sm:px-10">
-
-            <div className="fixed z-50 mt-12 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <>
+            <div className="min-h-screen bg-background text-foreground font-sans selection:bg-primary/20 overflow-x-hidden">
                 <NavBar />
-            </div>      
-                  
-            <HomeSection />
-            
-            <div className="max-w-7xl mx-auto w-full">
-                <AboutSection />
-                <WorksSection />
+                
+                <main className="container mx-auto px-6 pt-32 pb-20">
+                    <HomeSection />
+                    <TechnologiesSection />
+                    <WorkSection />
+                    <ProjectsSection />
+                    
+                    <Footer />
+                </main>
             </div>
-
-            <Footer />
-        </div>
+        </>
     );
 }

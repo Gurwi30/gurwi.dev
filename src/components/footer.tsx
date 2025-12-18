@@ -1,23 +1,71 @@
-import { PiDiscordLogoBold, PiGithubLogoBold, PiTelegramLogoBold } from "react-icons/pi";
+import { fadeInUp, staggerContainer } from "@/lib/animation";
+import { motion } from "@/utils/motion";
+import { Mail } from "lucide-react";
+import { LuGithub, LuLinkedin } from "react-icons/lu";
+import { PiTelegramLogoBold } from "react-icons/pi";
 
 const Footer = () => {
     return (
-        <footer className="py-16 px-2 md:px-6">
-            <div className="container mx-auto max-w-4xl">
-                <div className="flex flex-col md:flex-row gap-6 border-t border-white/10 pt-12 items-center justify-center md:justify-between">
-                
-                    <span className="text-sm text-white/60 text-center md:text-left">
-                        &copy; {new Date().getFullYear()} gurwi.dev. All rights reserved.
-                    </span>
-
-                    <div className="flex flex-row items-center gap-4 text-white/60">
-                        <a className="hover:text-blue-400 transition-colors" href="https://t.me/Gurwi30" target="_blank"><PiTelegramLogoBold /></a>
-                        <a className="hover:text-blue-400 transition-colors" href="https://github.com/Gurwi30/gurwi.dev" target="_blank"><PiGithubLogoBold /></a>
-                        <a className="hover:text-blue-400 transition-colors" href="/" target="_blank"><PiDiscordLogoBold /></a>
+        <footer className="py-20 border-t border-border/40 mt-20">
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-100px" }}
+                variants={staggerContainer}
+                className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+            >
+                <motion.div variants={fadeInUp}>
+                    <h2 className="text-4xl font-serif font-bold mb-6">
+                        Let&apos;s work together
+                    </h2>
+                    <p className="text-muted-foreground text-lg mb-8 max-w-md">
+                        I&apos;m currently available for freelance projects and open
+                        to new opportunities. If you have a project in mind,
+                        feel free to reach out.
+                    </p>
+                    <div id="contact" className="flex gap-6">
+                        {[
+                            { Icon: LuGithub, href: "https://github.com/Gurwi30" },
+                            { Icon: LuLinkedin, href: "https://www.linkedin.com/in/gurwi/" },
+                            { Icon: PiTelegramLogoBold, href: "https://t.me/Gurwi30" },
+                            { Icon: Mail, href: "mailto:gs3335769@gmail.com" },
+                        ].map(({ Icon, href }, i) => (
+                            <motion.a
+                                key={i}
+                                href={href}
+                                whileHover={{ scale: 1.1, y: -5 }}
+                                whileTap={{ scale: 0.95 }}
+                                className="p-3 rounded-full bg-secondary hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
+                            >
+                                <Icon className="w-6 h-6" />
+                            </motion.a>
+                        ))}
                     </div>
-                
-                </div>
-            </div>
+                </motion.div>
+
+                <motion.div
+                    variants={fadeInUp}
+                    className="flex flex-col items-end justify-center text-right"
+                >
+                    <div className="rotate-[-5deg] pr-8">
+                        <motion.div
+                            initial={{ width: 0, opacity: 0 }}
+                            whileInView={{ width: "100%", opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 2, ease: "easeInOut" }}
+                            className="font-signature text-8xl text-muted-foreground/20 overflow-hidden whitespace-nowrap select-none cursor-default py-12 px-10"
+                        >
+                            gurwi
+                        </motion.div>
+                    </div>
+                    
+                    <p className="text-sm text-muted-foreground mt-8">
+                        © {new Date().getFullYear()} Gurwi Works. All rights reserved.
+                        <br />
+                        Designed & Built with passion.
+                    </p>
+                </motion.div>
+            </motion.div>
         </footer>
     );
 };
