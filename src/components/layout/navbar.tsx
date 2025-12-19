@@ -1,7 +1,7 @@
 "use client"
-import { motion } from "@/utils/motion";
-import { ThemeToggle } from "./ui/theme-toggle";
-import { useScroll } from "@/hook/useScroll";
+import { motion } from "@/lib/motion";
+import { useScroll } from "@/hooks/useScroll";
+import { ThemeToggle } from "../ui/theme-toggle";
 
 const NavBar = () => {
     const { to, top } = useScroll();

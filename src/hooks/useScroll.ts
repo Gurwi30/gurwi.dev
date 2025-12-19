@@ -1,4 +1,4 @@
-import { useLenis } from "@/utils/lenis";
+import { useLenis } from "@/lib/lenis";
 
 export function useScroll() {
     const lenis = useLenis();

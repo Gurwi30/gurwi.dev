@@ -5,10 +5,10 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card";
-import { MotionImage } from "@/components/wrapper/image";
+import { MotionImage } from "@/components/wrappers/image";
 import { fadeInUp, staggerContainer } from "@/lib/animation";
 import { projects } from "@/lib/data";
-import { motion } from "@/utils/motion";
+import { motion } from "@/lib/motion";
 import { ExternalLink } from "lucide-react";
 
 export default function ProjectsSection() {

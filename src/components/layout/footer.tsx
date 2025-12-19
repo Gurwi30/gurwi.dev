@@ -1,5 +1,5 @@
 import { fadeInUp, staggerContainer } from "@/lib/animation";
-import { motion } from "@/utils/motion";
+import { motion } from "@/lib/motion";
 import { Mail } from "lucide-react";
 import { LuGithub, LuLinkedin } from "react-icons/lu";
 import { PiTelegramLogoBold } from "react-icons/pi";

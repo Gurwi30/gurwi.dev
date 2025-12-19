@@ -1,6 +1,6 @@
 import { fadeInUp, staggerContainer } from "@/lib/animation";
 import { experiences } from "@/lib/data";
-import { motion } from "@/utils/motion";
+import { motion } from "@/lib/motion";
 
 export default function WorkSection() {
     return (
