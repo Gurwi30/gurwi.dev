@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { motion } from "@/utils/motion";
+import { motion } from "@/lib/motion";
 import { ArrowRight, Home } from "lucide-react";
 import Link from "next/link";
 

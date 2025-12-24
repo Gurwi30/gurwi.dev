@@ -1,6 +1,6 @@
 import { technologies } from "@/lib/data";
 import { fadeInUp, staggerContainer } from "@/lib/animation";
-import { motion } from "@/utils/motion";
+import { motion } from "@/lib/motion";
 import Image from "next/image";
 
 export default function TechnologiesSection() {

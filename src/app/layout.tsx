@@ -1,43 +1,10 @@
 import type { Metadata } from "next";
-import {
-    Inter,
-    Playfair_Display,
-    Homemade_Apple,
-    Great_Vibes,
-} from "next/font/google";
-import { ReactLenis } from "@/utils/lenis";
+import { ReactLenis } from "@/lib/lenis";
+import { ThemeProvider } from "@/components/providers/theme-provider";
+import { greatVibes, homemadeApple, inter, playfair } from "@/app/fonts";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
-
-const inter = Inter({
-    subsets: ["latin"],
-    variable: "--font-inter",
-    display: "swap",
-    weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-    style: ["normal", "italic"],
-});
-
-const playfair = Playfair_Display({
-    subsets: ["latin"],
-    variable: "--font-playfair",
-    display: "swap",
-    weight: ["400", "500", "600", "700", "800", "900"],
-    style: ["normal", "italic"],
-});
-
-const homemadeApple = Homemade_Apple({
-    subsets: ["latin"],
-    variable: "--font-homemade-apple",
-    display: "swap",
-    weight: ["400"],
-});
-
-const greatVibes = Great_Vibes({
-    subsets: ["latin"],
-    variable: "--font-great-vibes",
-    display: "swap",
-    weight: ["400"],
-});
+import { isChristmas } from "../util/christmas";
+import SnowfallWrapper from "@/components/wrappers/snowfall";
 
 export const metadata: Metadata = {
     title: "Gurwi – Full Stack Developer & Modder",
@@ -66,16 +33,13 @@ export const metadata: Metadata = {
     }
 };
 
-export default function RootLayout({
-    children,
-}: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (
         <html lang="en">
-            <body
-                className={`${inter.variable} ${playfair.variable} ${homemadeApple.variable} ${greatVibes.variable} antialiased`}
-            >
+            <body className={`${inter.variable} ${playfair.variable} ${homemadeApple.variable} ${greatVibes.variable} antialiased`}>
                 <ReactLenis root>
                     <ThemeProvider defaultTheme="dark">
+                        {isChristmas() && <SnowfallWrapper />}
                         {children}
                     </ThemeProvider>
                 </ReactLenis>

@@ -1,5 +1,5 @@
 import { fadeInUp, staggerContainer } from "@/lib/animation";
-import { motion } from "@/utils/motion";
+import { motion } from "@/lib/motion";
 import { Mail } from "lucide-react";
 import { LuGithub, LuLinkedin } from "react-icons/lu";
 import { PiTelegramLogoBold } from "react-icons/pi";
@@ -45,7 +45,7 @@ const Footer = () => {
 
                 <motion.div
                     variants={fadeInUp}
-                    className="flex flex-col items-end justify-center text-right"
+                    className="flex flex-colitems-end justify-center text-right"
                 >
                     <div className="rotate-[-5deg] pr-8">
                         <motion.div

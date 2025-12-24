@@ -1,8 +1,8 @@
 "use client"
 import { Button } from "@/components/ui/button";
-import { useScroll } from "@/hook/useScroll";
+import { useScroll } from "@/hooks/useScroll";
 import { fadeInUp, staggerContainer } from "@/lib/animation";
-import { motion } from "@/utils/motion";
+import { motion } from "@/lib/motion";
 
 export default function HomeSection() {
     const { to } = useScroll();
