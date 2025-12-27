@@ -45,7 +45,7 @@ const Footer = () => {
 
                 <motion.div
                     variants={fadeInUp}
-                    className="flex flex-colitems-end justify-center text-right"
+                    className="flex flex-col items-end justify-center text-right"
                 >
                     <div className="rotate-[-5deg] pr-8">
                         <motion.div
