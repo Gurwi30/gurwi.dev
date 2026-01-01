@@ -3,8 +3,6 @@ import { ReactLenis } from "@/lib/lenis";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { greatVibes, homemadeApple, inter, playfair } from "@/app/fonts";
 import "./globals.css";
-import { isChristmas } from "../util/christmas";
-import SnowfallWrapper from "@/components/wrappers/snowfall";
 
 export const metadata: Metadata = {
     title: "Gurwi – Full Stack Developer & Modder",
@@ -39,7 +37,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <body className={`${inter.variable} ${playfair.variable} ${homemadeApple.variable} ${greatVibes.variable} antialiased`}>
                 <ReactLenis root>
                     <ThemeProvider defaultTheme="dark">
-                        {isChristmas() && <SnowfallWrapper />}
                         {children}
                     </ThemeProvider>
                 </ReactLenis>
