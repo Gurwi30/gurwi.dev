@@ -6,7 +6,6 @@ import { motion } from "@/lib/motion";
 import { isChristmas, isNewYear } from "@/util/festivity";
 import Fireworks from "../funny/firework";
 import SnowfallWrapper from "../funny/snowfall";
-import NewYearMascot from "../funny/new-year";
 
 export default function HomeSection() {
     const { to } = useScroll();
@@ -17,7 +16,7 @@ export default function HomeSection() {
             className="min-h-[80vh] flex flex-col justify-center max-w-5xl"
         >
             {isChristmas() && <SnowfallWrapper />}
-            {isNewYear() && (<div><Fireworks /> <NewYearMascot /></div>)}
+            {isNewYear() && (<div><Fireworks /></div>)}
             
             <motion.div
                 initial="hidden"
