@@ -28,7 +28,7 @@ const Footer = () => {
                             { Icon: LuGithub, href: "https://github.com/Gurwi30" },
                             { Icon: LuLinkedin, href: "https://www.linkedin.com/in/gurwi/" },
                             { Icon: PiTelegramLogoBold, href: "https://t.me/Gurwi30" },
-                            { Icon: Mail, href: "mailto:gs3335769@gmail.com" },
+                            { Icon: Mail, href: "mailto:contact@gurwi.dev" },
                         ].map(({ Icon, href }, i) => (
                             <motion.a
                                 key={i}
