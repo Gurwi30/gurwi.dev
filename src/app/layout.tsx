@@ -5,17 +5,17 @@ import { greatVibes, homemadeApple, inter, playfair } from "@/app/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
-    title: "Gurwi – Full Stack Developer & Modder",
-    description: "I’m a full stack developer from Italy building accessible, pixel-perfect websites and custom game mods.",
+    title: "Gurwi - Full Stack Developer & Modder",
+    description: "I'm a full stack developer from Italy building accessible, pixel-perfect websites and custom game mods.",
     icons: "/favicon.ico",
     openGraph: {
-        title: "Gurwi Portfolio – Projects & Creations",
+        title: "Gurwi Portfolio - Projects & Creations",
         description:
             "Explore my latest projects, web applications, and custom Minecraft mods.",
-        url: "https://gurwi.me",
+        url: "https://gurwi.dev",
         images: [
             {
-                url: "https://gurwi.me/og.png",
+                url: "https://gurwi.dev/og.png",
                 width: 1200,
                 height: 630
             },
@@ -25,9 +25,9 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Gurwi – Full Stack Developer & Modder",
+        title: "Gurwi - Full Stack Developer & Modder",
         description: "Check out my projects, web apps, and custom Minecraft mods.",
-        images: ["https://gurwi.me/og.png"]
+        images: ["https://gurwi.dev/og.png"]
     }
 };
 
