@@ -12,10 +12,10 @@ export const metadata: Metadata = {
         title: "Gurwi Portfolio – Projects & Creations",
         description:
             "Explore my latest projects, web applications, and custom Minecraft mods.",
-        url: "https://gurwi.me",
+        url: "https://gurwi.dev",
         images: [
             {
-                url: "https://gurwi.me/og.png",
+                url: "https://gurwi.dev/og.png",
                 width: 1200,
                 height: 630
             },
