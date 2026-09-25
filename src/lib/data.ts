@@ -12,7 +12,7 @@ export type Experience = {
     endDate: string
 }
 
-type Category = "web" | "mod" | "other";
+type Category = "web" | "mod" | "library" | "other";
 
 export type Project = {
     title: string,
@@ -21,6 +21,7 @@ export type Project = {
     featured: boolean,
     image: string,
     link: string,
+    docs?: string,
     tags: string[]
 }
 
@@ -106,6 +107,7 @@ export const experiences: Experience[] = [
 ];
 
 export const projects: Project[] = [
-    { title: "InventoryTracker", description: "A simple inventory saver.", category: "mod", featured: false, image: "/showcases/inventorytracker.png", link: "https://modrinth.com/plugin/inventorytracker", tags: [ "SpigotMC", "MySql" ] },
+    { title: "InventoryTracker", description: "A simple inventory saver.", category: "mod", featured: true, image: "/showcases/inventorytracker.png", link: "https://modrinth.com/plugin/inventorytracker", docs: "https://docs.gurwi.dev/inventorytracker", tags: [ "SpigotMC", "MySql" ] },
+    { title: "Confetti", description: "A simple YAML Configuration Library based on SnakeYaml", category: "library", featured: true, image: "/showcases/confetti.png", link: "https://github.com/Gurwi30/confetti", docs: "https://docs.gurwi.dev/confetti", tags: [ "SnakeYAML", "Java Library" ] }
     //{ title: "LumiBot.dev", description: "A powerful Discord bot dashboard and management system.", category: "web", featured: true, image: "/showcases/lumibot.png", link: "https://lumibot.dev", tags: [ "NextJS", "Framer Motion", "SpringBoot", "PostgreSQL", "Redis", "JDA" ] }
 ]
