@@ -108,6 +108,7 @@ export const experiences: Experience[] = [
 
 export const projects: Project[] = [
     { title: "InventoryTracker", description: "A simple inventory saver.", category: "mod", featured: true, image: "/showcases/inventorytracker.png", link: "https://modrinth.com/plugin/inventorytracker", docs: "https://docs.gurwi.dev/inventorytracker", tags: [ "SpigotMC", "MySql" ] },
-    { title: "Confetti", description: "A simple YAML Configuration Library based on SnakeYaml", category: "library", featured: true, image: "/showcases/confetti.png", link: "https://github.com/Gurwi30/confetti", docs: "https://docs.gurwi.dev/confetti", tags: [ "SnakeYAML", "Java Library" ] }
+    { title: "Confetti", description: "A simple YAML Configuration Library based on SnakeYaml.", category: "library", featured: true, image: "/showcases/confetti.png", link: "https://github.com/Gurwi30/confetti", docs: "https://docs.gurwi.dev/confetti", tags: [ "SnakeYAML", "Java Library" ] },
+    { title: "Lint Vision", description: "A VS Code ErrorLens inspired plugin for JetBrains IDEs.", category: "mod", featured: true, image: "/showcases/lintvision.png", link: "https://plugins.jetbrains.com/plugin/35068-lintvision?noRedirect=true", tags: [ "JetBrains Plugin", "Kotlin" ] }
     //{ title: "LumiBot.dev", description: "A powerful Discord bot dashboard and management system.", category: "web", featured: true, image: "/showcases/lumibot.png", link: "https://lumibot.dev", tags: [ "NextJS", "Framer Motion", "SpringBoot", "PostgreSQL", "Redis", "JDA" ] }
 ]
